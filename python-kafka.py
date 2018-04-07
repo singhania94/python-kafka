@@ -1,8 +1,8 @@
 from kafka import KafkaConsumer, KafkaProducer
 import sys
 
-consumer = KafkaConsumer(sys.argv[1], bootstrap_servers='acetlegt1d:9092')
-producer = KafkaProducer(bootstrap_servers='acetlegt1d:9092')
+consumer = KafkaConsumer(sys.argv[1], bootstrap_servers='localhost:9092')
+producer = KafkaProducer(bootstrap_servers='localhost:9092')
 
 
 for msg in consumer:
